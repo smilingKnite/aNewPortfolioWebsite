@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>About Me</title>
+        <link rel="stylesheet" href="/indexStyle">
+        <script>
+                $(document).ready(function() { 
+                function displayName(data){ 
+                        this.name = data["login"]
+                        $("#logName").html(this.name);
+                        // console.log(this.name); 
+                };
+                // $("#butt").on('click', function() {
+                        var info = $.get("https://api.github.com/users/smilingKnite", displayName )
+                // });
+                // $('#butt').off('click', function(){
+                //     $("#logName").html();
+                // });
+        });
+        </script>
+        </head>
+        <body>
+                <header>
+                        <h2>About Me</h2>
+                        <!-- <p>
+                                <b>  Creator: Tyler Mondragon </b>
+                        </p> -->
+                        <div id="socialLinks">
+                                <h5 >Github: <a target="_blank" href="https://github.com/smilingKnite" id="logName"></a></h5>
+                                <h5 >LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/tyler-mondragon-b0106b127/">Click here!</a></h5>
+                        </div>
+                </header>
+                <div id="sideBar">
+                        <ul>
+                                <li><a href="/">Home Page</a></li>
+                                <li><a href="#">About Me</a></li>
+                                <li><a href="/projects">Past Projects</a></li>
+                                <li><a href="/contact">Contact Me</a></li>
+                        </ul>
+                </div>
+                <div id="content">
+                        <div id="summary">
+                                <h4>Summary</h4>
+                                <p>I am a Full stack web developer with four years of training with a passion for developing software and websites since my senior year of highschool.
+                                I have exstensive hands on training in several software languages with three certifications in the feild.
+                                
+                                </p>
+                        </div>
+                        <div id="horkHistory">
+                                <h4>Work History</h4>
+                                <ul>
+                                        <li>
+                                                <h5>Freelance Software Developer, Nov 2015 - Present</h5>
+                                                <ul>
+                                                        <li>Designed and programmed custom websites for a small business</li>
+                                                        <li>Gathered requirements, created business opportunities and negotiated business arrangements</li>
+                                                </ul>
+                                        </li>
+                                        <li>
+                                                <h5>Costco Warehouse, Cashier, Nov 2017 -  July 2018</h5>
+                                                <ul>
+                                                        <li>San Jose, CA</li>
+                                                        <li>Clears and cleans aisles, and assists members</li>
+                                                        <li>Stock and straighten merchandise for sale in the warehouse</li>
+                                                        <li>Packs member orders into boxes and transfers items to a separate cart for Cashiers</li>
+                                                        <li>Performs clean-up, cart retrieval, merchandise restocking and runs for items as directed</li>
+                                                </ul>
+                                        </li>
+                                        <li>
+                                                <h5>West Marine, Hazardous Materials and Distribution, April 2017 - Nov 2017</h5>
+                                                <ul>
+                                                        <li>Hollister, CA</li>
+                                                        <li>Managed both hazardous and non-hazardous products for shipping and distribution</li>
+                                                        <li>Experience with inventory control software</li>
+                                                        <li>Recognized for exceptional work performance from management</li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div id="techSkills">
+                                <h4>Technical Skills</h4>
+                                <ul id="skills">
+                                        <li>Javascript</li>
+                                        <li>Java</li>
+                                        <li>Ruby on Raisl</li>
+                                        <li>Python</li>
+                                        <li>Django</li>
+                                        <li>Adobe Illustator</li>
+                                        <li>Adobe Photoshop</li>
+                                        <li>CSS</li>
+                                        <li>HTML/XML</li>
+                                        <li>MEAN Stack</li>
+                                        <li>Node.js</li>
+                                        <li>jQuery</li>
+                                        <li>Express</li>
+                                        <li>MongoDB</li>
+                                        <li>SQL</li>
+                                        <li>noSQL</li>
+                                        <li>Angular</li>
+                                        <li>Postgress</li>
+                                        <li>AWS</li>
+                                </ul>
+                        </div>
+                
+                        <div id="edu">
+                                <h4>Education</h4>
+                                <ul>
+                                        <li>
+                                                <h5><a href="https://www.codingdojo.com/" target="_blank">Coding Dojo</a></h5>
+                                                <ul>
+                                                        <li>Black Belt Software Developer Certification 2018</li>
+                                                        <li>Coding Dojo - San Jose, Ca</li>
+                                                </ul>
+                                        </li>
+                                        <li>
+                                                <h5><a href="http://www.metroed.net/SVCTE/" target="_blank">Silicon Valley Career Technical Education</a></h5>
+                                                <ul>
+                                                        <li><a href="http://www.metroed.net/svcte/mobile-app-design-and-computer-coding" target="_blank">Mobile App Design and Development - Computer Science Certificate 2015</a></li>
+                                                        <li>760 Hillsdale Ave, San Jose, CA 95136</li>
+                                                </ul>
+                                        </li>
+                                        <li>
+                                                <h5><a href="https://www.jobtrainworks.org/it-service-training-program/" target="_blank">Job Train</a></h5>
+                                                <ul>
+                                                        <li>Internet Web Developer Computer Science Certificate 2016</li>
+                                                        <li>Canada College,  Redwood City, Ca  </li>
+                                                </ul>
+                                        </li>
+                                        <li>
+                                                <h5><a href="http://www.cabrillo.edu/" target="_blank">Computer Science AS 2019</a></h5>
+                                                <ul>
+                                                        <li>In Progress</li>
+                                                        <li>Cabrillo College, Los Altos Hills, CA</li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+        </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mondragon!</title>
+    
+    <link rel="stylesheet" href="/indexStyle">
+</head>
+<script>
+    $(document).ready(function() { 
+        function displayName(data){ 
+            this.name = data["login"]
+            $("#logName").html(this.name);
+            // console.log(this.name); 
+        };
+        // $("#butt").on('click', function() {
+            var info = $.get("https://api.github.com/users/smilingKnite", displayName )
+        // });
+        // $('#butt').off('click', function(){
+        //     $("#logName").html();
+        // });
+ });
+</script>
+        <body>
+                <header>
+                        <h2>Projects</h2>
+                        <!-- <p>
+                              <b>  Creator: Tyler Mondragon </b>
+                        </p> -->
+                        <div id="socialLinks">
+                                <h5 >Github: <a target="_blank" href="https://github.com/smilingKnite" id="logName">smilingKnite</a></h5>
+                                <h5 >LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/tyler-mondragon-b0106b127/">Click here!</a></h5>
+                        </div>
+                </header>
+                <div id="sideBar">
+                        <ul>
+                                <li><a href="/">Home Page</a></li>
+                                <li><a href="/about">About Me</a></li>
+                                <li><a href="/projects">Past Projects</a></li>
+                                <li><a href="/contact">Contact Me</a></li>
+                        </ul>
+                </div>
+
+                <div id="content">
+                        <h4>Projects on github</h4>
+                        <div id="projects">
+                                <ul>
+                                        <li><a href="https://github.com/smilingKnite/movieViewer" target="_blank">Movie Viewer</a></li>
+                                        <li><a href="https://github.com/smilingKnite/dojoNinja" target="_blank">Dojo Ninja</a></li>
+                                        <li><a href="https://github.com/smilingKnite/pokemonAPI" target="_blank">Pokemon Api</a></li>
+                                        <li><a href="https://github.com/smilingKnite/disappearingImages" target="_blank">Disappearing Images</a></li>
+                                        <li><a href="https://github.com/smilingKnite/jQueryFunctions" target="_blank">jQuery Functions</a></li>
+                                        <li><a href="https://github.com/smilingKnite/Ruby-practice" target="_blank">Ruby practice</a></li>
+                                        <li><a href="https://github.com/smilingKnite/group_chat" target="_blank">Group Chat</a></li>
+                                        <li><a href="https://github.com/smilingKnite/Spoilr" target="_blank">Spoilr</a></li>
+                                        <li><a href="https://github.com/smilingKnite/JSBasics" target="_blank">JS Basics</a></li>
+                                </ul>
+
+                        </div>
+
+                </div>
+
+
+
+        </body>
+</html>

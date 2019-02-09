@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mondragon!</title>
+    
+    <link rel="stylesheet" href="/indexStyle">
+</head>
+<script>
+    $(document).ready(function() { 
+        function displayName(data){ 
+            this.name = data["login"]
+            $("#logName").html(this.name);
+            // console.log(this.name); 
+        };
+        // $("#butt").on('click', function() {
+            var info = $.get("https://api.github.com/users/smilingKnite", displayName )
+        // });
+        // $('#butt').off('click', function(){
+        //     $("#logName").html();
+        // });
+ });
+</script>
+        <body>
+                <header>
+                        <h2>Contact Information</h2>
+                        <!-- <p>
+                              <b>  Creator: Tyler Mondragon </b>
+                        </p> -->
+                        <div id="socialLinks">
+                                <h5 >Github: <a target="_blank" href="https://github.com/smilingKnite" id="logName">smilingKnite</a></h5>
+                                <h5 >LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/tyler-mondragon-b0106b127/">Click here!</a></h5>
+                        </div>
+                </header>
+                <div id="sideBar">
+                        <ul>
+                                <li><a href="/">Home Page</a></li>
+                                <li><a href="/about">About Me</a></li>
+                                <li><a href="/projects">Past Projects</a></li>
+                                <li><a href="/contact">Contact Me</a></li>
+                        </ul>
+                </div>
+                
+            <div id="content">
+                    <div id="Information">
+                            <h4>Tyler Mondragon</h4>
+                            <p>Phone Number: (408)644-8379</p>
+                            <p>Email: tyler.j.modnragon@gmail.com</p>
+                    </div>
+                 
+          
+            </div>
+    
+
+        </body>
+</html>
